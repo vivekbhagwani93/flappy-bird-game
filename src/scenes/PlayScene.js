@@ -200,6 +200,7 @@ class PlayScene extends BaseScene {
     }
 
     saveBestScore() {
+        localStorage.setItem('flappyBirdLastScore', this.score)
         const bestScoreText = localStorage.getItem('flappyBirdBestScore')
         const bestScore = parseInt(bestScoreText || '', 10)
         if (!bestScore || bestScore < this.score) {
@@ -217,7 +218,8 @@ class PlayScene extends BaseScene {
         this.time.addEvent({
             delay: 1000,
             callback: () => {
-                this.scene.restart()
+                // this.scene.restart()
+                this.scene.start('ScoreboardScene')
             },
             loop: false
         })

@@ -10,7 +10,9 @@ class ScoreboardScene extends BaseScene {
 
         this.add.text(
             ...this.screenCenter, 
-            `Best Score: ${this.getLocalBestScore()}`, 
+            `GAME OVER!
+            \nScore: ${this.getLocalLastScore()}
+            \nBest Score: ${this.getLocalBestScore()}`, 
             this.fontStyleOptions
         )
         .setOrigin(0.5, 1)

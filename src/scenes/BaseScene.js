@@ -48,6 +48,10 @@ class BaseScene extends Phaser.Scene {
         });
     }
 
+    getLocalLastScore() {
+        return parseInt(localStorage.getItem('flappyBirdLastScore') || '0', 10)
+    }
+
     getLocalBestScore() {
         return parseInt(localStorage.getItem('flappyBirdBestScore') || '0', 10)
     }
