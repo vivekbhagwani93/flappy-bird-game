@@ -9,7 +9,7 @@ class DifficultyScene extends BaseScene {
             { difficulty: 'NORMAL', text: 'Normal' },
             { difficulty: 'HARD', text: 'Hard' },
             { difficulty: 'MASOCHISM', text: 'Masochism (Self-hatred)' },
-            { difficulty: 'ASIAN', text: 'Asian' },
+            { difficulty: 'EMOTIONALDAMAGE', text: 'Emotional Damage' },
         ]
     }
 

@@ -35,7 +35,7 @@ export const DIFFICULTY_SETTINGS = {
         initialPipesVelocity: { x: -250, y: 0 },
         initialPipesGravity: { x: -20, y: 0 },
     },
-    ASIAN: {
+    EMOTIONALDAMAGE: {
         birdGravity: { x: 0, y: 1000 },
         initialBirdVelocity: { x: 0, y: 0 },
         birdFlapVelocity: 600,
